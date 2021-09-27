@@ -1,4 +1,5 @@
-pub trait EqNode<A, B>
+/// check this again!
+pub trait EqNode: Fn<X, Y>
 where
     A: Symbolic,
     B: FiniteSpace,
