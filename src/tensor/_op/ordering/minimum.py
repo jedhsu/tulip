@@ -1,0 +1,2 @@
+
+    fmin = jnp.fmin

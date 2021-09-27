@@ -1,0 +1,33 @@
+inop_separator = "Front"
+
+imports_granularity = "Crate"
+
+merge_derives = false
+
+max_width = 80
+comment_width = 80
+wrap_comments = true
+
+indent_style = "Block"
+hard_tabs = false
+
+empty_item_single_line = true
+
+fn_args_layout = "Vertical"
+fn_single_line = false
+
+force_explicit_abi = true
+force_multiline_blocks = true
+
+format_code_in_doc_comments = true
+
+blank_lines_lower_bound = 1
+blank_lines_upper_bound = 1
+
+group_imports = "Preserve"
+
+control_brace_style = "ClosingNextLine"
+
+
+brace_style = "SameLineWhere"
+where_single_line = false
