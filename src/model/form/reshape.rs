@@ -5,5 +5,12 @@ where
     R: Compute,
 {
     fn reshape(&self) -> Self;
+
     fn volume(&self) -> usize;
+
+    fn apply(
+        &self,
+        input: &Graph,
+        shaping: Shaping,
+    ) -> Graph;
 }
