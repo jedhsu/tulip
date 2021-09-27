@@ -6,7 +6,7 @@ pub trait Cost {
         acceleration: f64,
     ) -> (Optimized, Graph);
 
-    fn shaping(input: Graph, reshape: Reshape) -> Iter<Graph>;
+    fn shaping(input: Graph, reshape: Reshape,) -> Iter<Graph>;
 }
 
 impl Cost {

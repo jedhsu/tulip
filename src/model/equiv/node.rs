@@ -1,9 +1,12 @@
+use model::equiv::Isometrizer;
+
 /// check this again!
-pub trait EqNode: Fn<X, Y>
+pub trait EqNode: T
 where
-    A: Symbolic,
-    B: FiniteSpace,
+    T: Fn<L, R> + Isometrizer,
+    L: Symbolic,
+    R: FiniteSpace,
 {
-    fn id(&self) -> A;
-    fn children(&self) -> B;
+    fn id(&self) -> L;
+    fn children(&self) -> R;
 }

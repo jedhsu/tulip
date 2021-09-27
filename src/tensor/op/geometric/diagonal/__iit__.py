@@ -1,2 +1,0 @@
-
-    Diagonal = jnp.diagonal
