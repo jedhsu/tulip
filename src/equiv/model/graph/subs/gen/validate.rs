@@ -7,6 +7,7 @@ pub trait Validate {
         inputs: Vec<Tensor>,
     ) -> Result {
         let reshaping: HashSet<Reshape> = HashSet::new();
+
         for identical in self::index.identicals().iter() {
             if let TESTINGS.iter().map(|testing| {
                 testing.states_equivalence(identical)
@@ -15,5 +16,12 @@ pub trait Validate {
             }
         }
         Ok();
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn validate() {
     }
 }

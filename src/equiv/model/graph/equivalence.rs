@@ -1,13 +1,13 @@
 
-pub struct Congruence {
+pub struct Equiv {
     left: &Graph,
     right: &Graph,
 }
 
-pub trait Congruent {
-    pub type congruences;
+pub trait Equivalence {
+    pub type equivalences;
 
-    fn congruences() -> Iter<Congruence>;
+    fn equivalences() -> Iter<Equivalence>;
 
     /// Declares congruences.
     fn adjoin(&self);
@@ -23,4 +23,21 @@ impl Congruent for Substitution {
         get_duplicates().iter().map(|x| if let tests.iter().all(|x, y| x.equiv(y)) self.congruences.add(Congruence(x, y));
     }
 
+}
+
+#[cfg(test)]
+mod tests {
+    use super::Congruent;
+
+    #[test]
+    fn congruences(&self) {
+    }
+
+    #[test]
+    fn adjoin(&self) {
+    }
+
+    #[test]
+    fn get_duplicates(&self) {
+    }
 }

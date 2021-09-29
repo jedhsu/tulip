@@ -29,3 +29,9 @@ impl Cost {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn extract()
+}

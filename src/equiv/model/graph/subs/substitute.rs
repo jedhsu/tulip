@@ -1,4 +1,5 @@
-pub struct Substitution {
+/// A graph substitution.
+pub struct Reshape {
     left: Graph,
     right: Graph,
 }

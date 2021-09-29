@@ -1,13 +1,14 @@
-
+use crate::equiv::model::oper;
 
 const THRESHOLD: u32 = 1000;
 
-pub trait Probe {
+pub trait Build {
     fn spawn(&self) -> Result {
         Ok()
     }
-
+    
     fn build(
+        &self,
         ops: Vec<Op>,
         n: usize,
         graph: &mut EqGraph,

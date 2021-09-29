@@ -1,7 +1,17 @@
 pub struct Add {}
 
-impl Add {
-    fn equivalences() -> Vec<Equiv> {
-        Equiv::new(("x", ("y", "z")), (("x", "y"), "z"));
+pub trait Add: X
+where
+    X: TensorOp + BinOp<Tensor, Tensor> + P,
+    P: Associativity + Commutativity,
+{
+}
+
+pub trait Commutativity {
+    fn commut_equiv() -> Vec<Equiv> {
+        Equiv::new(
+            (TensorType::X, (TensorType::Y, TensorType::Z)),
+            ((TensorType::X, TensorType::Y), TensorType::Z),
+        );
     }
 }

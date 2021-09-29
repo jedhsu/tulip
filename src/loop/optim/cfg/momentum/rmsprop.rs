@@ -1,24 +1,45 @@
+// /// Parameters for the RmsProp optimizer.
+// #[derive(Debug, Copy, Clone)]
+// pub struct RmsProp {
+//     pub alpha: f64,
+//     pub eps: f64,
+//     pub wd: f64,
+//     pub momentum: f64,
+//     pub centered: bool,
+// }
+
+// impl Default for RmsProp {
+//     fn default() -> Self {
+//         RmsProp {
+//             alpha: 0.99,
+//             eps: 1e-8,
+//             wd: 0.,
+//             momentum: 0.,
+//             centered: false,
+//         }
+//     }
+// }
 /// Parameters for the RmsProp optimizer.
 #[derive(Debug, Copy, Clone)]
-pub struct RmsProp {
-    pub alpha: f64,
-    pub eps: f64,
-    pub wd: f64,
-    pub momentum: f64,
-    pub centered: bool,
+pub trait RmsProp {
+    const alpha: f64 = 0.99;
+    const eps: f64 = 1e-8;
+    const wd: f64 = 0;
+    const momentum: f64 = 0.;
+    const centered: bool = false;
 }
 
-impl Default for RmsProp {
-    fn default() -> Self {
-        RmsProp {
-            alpha: 0.99,
-            eps: 1e-8,
-            wd: 0.,
-            momentum: 0.,
-            centered: false,
-        }
-    }
-}
+// impl Default for RmsProp {
+//     fn default() -> Self {
+//         RmsProp {
+//             alpha: 0.99,
+//             eps: 1e-8,
+//             wd: 0.,
+//             momentum: 0.,
+//             centered: false,
+//         }
+//     }
+// }
 
 /// Creates the configuration for the RmsProp optimizer.
 pub fn rms_prop(

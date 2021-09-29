@@ -8,8 +8,10 @@ pub trait CheckCyling {
 }
 
 /// A rewrite rule.
-pub trait Reshape<L, R>: Equiv<L, R>
+pub trait Reshape<L, R>: X
 where
+    X: Equiv<L, R>,
+
     L: Compute,
     R: Compute,
 {

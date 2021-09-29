@@ -1,3 +1,4 @@
+use crate::net::tensor;
 use model::equiv::Isometrizer;
 
 use spaces::Discrete;
@@ -9,5 +10,9 @@ pub trait EqGraph: Graph {
     ) -> bool;
 
     fn populate(&self);
-    fn sweep(&self);
+}
+
+pub trait Sweep: Graph {
+    // fn forward_sweep(&self) -
+    fn output(&self) -> Tensor;
 }
