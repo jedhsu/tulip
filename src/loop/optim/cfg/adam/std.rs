@@ -12,6 +12,7 @@ where
 {
     fn adam_optimization() -> AdamOpt {}
 }
+
 impl Default for Adam {
     fn default() -> Self {
         Adam {

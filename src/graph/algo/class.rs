@@ -6,8 +6,12 @@ where
 
     T: Isometrizer,
 {
-    fn is_representing(
+    pub type EqNodes;
+
+    fn representations(
         &self,
         term: &Term,
-    ) -> bool;
+    ) -> {
+        let 
+    }
 }

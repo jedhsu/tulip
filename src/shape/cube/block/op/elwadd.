@@ -1,3 +1,0 @@
-
-∀x, y, z. ewadd(x, ewadd(y, z)) = ewadd(ewadd(x, y), z)
-∀x, y. ewadd(x, y) = ewadd(y, x)

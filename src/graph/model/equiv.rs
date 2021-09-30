@@ -1,11 +1,12 @@
 
-pub struct Equiv {
-    left: &Graph,
-    right: &Graph,
-}
+// pub struct Equiv {
+//     left: &Graph,
+//     right: &Graph,
+// }
 
-pub trait Equivalence {
-    pub type equivalences;
+pub trait Equiv {
+    pub type Left;
+    pub type Right;
 
     fn equivalences() -> Iter<Equivalence>;
 
