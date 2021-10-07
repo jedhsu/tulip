@@ -8,5 +8,5 @@ Implements the following papers:
 
 ### References
 
-+ \cite{eqsat-2021}
-+ \cite{taso-2019}
++ @eqsat-2021
++ @taso-2019
