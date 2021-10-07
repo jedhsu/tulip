@@ -1,4 +1,0 @@
-class Display(
-    Cell,
-):
-    pass

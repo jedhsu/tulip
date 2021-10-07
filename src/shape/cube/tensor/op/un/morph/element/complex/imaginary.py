@@ -1,5 +1,0 @@
-"""
-
-    *Imaginary Component*
-
-"""

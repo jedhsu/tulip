@@ -1,13 +1,13 @@
 [package]
-name = "cogn"
+name = "vortex"
 version = "0.1.0"
 edition = "2018"
-description = "Accelerated machine learning in Rust."
+description = "Graph neural-network superoptimization."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tch = "0.5.0"
+cortex = "0.1.0"
 egg = "0.6.0"
 spaces = "5.0.0"
 priority-queue = "0.5.2"
